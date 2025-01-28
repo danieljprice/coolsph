@@ -1,6 +1,6 @@
 FC=gfortran
 FFLAGS=-Wall -O3 -fdefault-real-8
-SRC=dens.f90 force.f90 step.f90 \
+SRC=output.f90 dens.f90 force.f90 step.f90 \
     setup.f90 sph.f90
 OBJ=${SRC:.f90=.o}
 

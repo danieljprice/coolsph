@@ -1,14 +1,14 @@
 program sph
  use setup, only:do_setup,pi
+ use output, only:write_output
  implicit none
  integer :: n
- real, allocatable :: x(:)
- !real, allocatable :: y(:)
+ real, allocatable :: x(:),v(:)
 
  call do_setup(n,x)
- print*,n,pi
- print*,' x = ',x
- ! y = x
- !print*,y
+
+ call write_output(n,x,v)
+ call write_output(n,x,v) 
+print*,'coolsph done'
 
 end program sph
